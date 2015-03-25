@@ -2,8 +2,7 @@ build_settings:
   verbose: false
 
 test:
-  behat:
   drush:
-    features: brun
+    features: --version
 
 
