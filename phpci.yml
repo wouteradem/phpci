@@ -3,7 +3,7 @@ build_settings:
 
 test:
   drush:
-    features: --version
+    features: --brun
 
 
 
