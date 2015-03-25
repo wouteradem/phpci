@@ -1,19 +1,9 @@
 build_settings:
   verbose: false
-  ignore:
-    - "vendor"
-
-setup:
-  composer:
-    action: "install"
 
 test:
   behat:
   drush:
     features: brun
 
-failure:
-  email:
-    committer: true
-    cc: ["wouteradem@hotmail.com"]
 
