@@ -3,9 +3,7 @@ build_settings:
 
 test:
   drush:
-    features:
-      en -y behatrunner
-      brun
+    features: brun
 
 
 
