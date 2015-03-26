@@ -1,9 +1,20 @@
 build_settings:
-  verbose: false
+    mysql:
+        host: 'localhost'
+        user: 'drupal'
+        pass: '12345678'
+
+setup:
+    mysql:
+        - "CREATE DATABASE lightning;"
 
 test:
   drush:
-    features: --version
+    features: brun
+
+complete:
+    mysql:
+        - "DROP DATABASE lightning;"
 
 
 
